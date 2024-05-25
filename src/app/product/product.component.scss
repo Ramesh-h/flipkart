@@ -1,0 +1,52 @@
+.products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    flex: 1 1 calc(15% - 25px);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    /* Set a fixed height for all cards */
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 calc(100% - 25px);
+    }
+}
+
+@media (max-width: 960px) {
+    .card {
+        flex: 1 1 calc(50% - 25px);
+    }
+}
+
+
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-subtitle {
+    color: #666;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}

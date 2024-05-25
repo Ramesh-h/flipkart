@@ -1,0 +1,31 @@
+.catDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catMain {
+    display: flex;
+    // gap: 0px;
+    height: 7rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.subTitle {
+    font-weight: 14px;
+    color: blue;
+    font-weight: 500;
+    padding: 5px;
+}

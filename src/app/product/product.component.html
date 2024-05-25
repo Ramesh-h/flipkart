@@ -1,0 +1,31 @@
+<mat-card style="padding: 15px 35px">
+  <div
+    style="
+      padding: 0 10px 20px 0;
+      font-weight: 700;
+      font-size: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    "
+  >
+    <div>Best of fashions</div>
+    <button mat-flat-button color="primary">View all</button>
+  </div>
+  <div class="products">
+    <mat-card *ngFor="let member of products" class="card">
+      <img
+        mat-card-image
+        [src]="member.image"
+        alt="Photo of {{ member.title }}"
+        class="card-image"
+      />
+      <mat-card-content class="card-content">
+        <p class="card-title">
+          {{ member.title }}
+        </p>
+        <p>{{ member.price }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</mat-card>

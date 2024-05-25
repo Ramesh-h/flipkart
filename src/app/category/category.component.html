@@ -1,0 +1,249 @@
+<div class="catMain">
+  <div class="catDiv">
+    <img src="assets/images/offer.png" width="50" />
+    <a>Top Offers</a>
+  </div>
+  <div class="catDiv">
+    <img
+      src="https://rukminim2.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100"
+      width="50"
+    />
+    <a>Mobiles</a>
+  </div>
+  <div class="catDiv">
+    <img
+      src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100"
+      width="50"
+    />
+    <a [matMenuTriggerFor]="fashion">
+      Fashion <mat-icon>keyboard_arrow_down</mat-icon></a
+    >
+    <mat-menu #fashion="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="menstopwear">
+        Men's top wear
+      </button>
+      <button mat-menu-item [matMenuTriggerFor]="mensbottomwear">
+        Men's bottom wear
+      </button>
+      <button mat-menu-item [matMenuTriggerFor]="womensethnic">
+        Womens ethnic
+      </button>
+      <button mat-menu-item [matMenuTriggerFor]="mensfootwear">
+        Men's foot wear
+      </button>
+    </mat-menu>
+
+    <mat-menu #menstopwear="matMenu">
+      <p class="subTitle">Men's top wear</p>
+      <button mat-menu-item>All</button>
+      <button mat-menu-item>Men's Tshirts</button>
+      <button mat-menu-item>Men's Casual Shirts</button>
+      <button mat-menu-item>Men's Formal Shirts</button>
+      <button mat-menu-item>Men's Kurtas</button>
+    </mat-menu>
+
+    <mat-menu #mensbottomwear="matMenu">
+      <p class="subTitle">Men's bottom wear</p>
+      <button mat-menu-item>All</button>
+      <button mat-menu-item>Men's Jeans</button>
+      <button mat-menu-item>Men's Trousers</button>
+      <button mat-menu-item>Men's Track Pants</button>
+      <button mat-menu-item>Men's Shorts</button>
+      <button mat-menu-item>Men's Cargos</button>
+      <button mat-menu-item>Men's Three Fourth</button>
+    </mat-menu>
+
+    <mat-menu #womensethnic="matMenu">
+      <p class="subTitle">Womens Ethnic</p>
+      <button mat-menu-item>Women Sarees</button>
+      <button mat-menu-item>Women Kurtas & Kurtis</button>
+      <button mat-menu-item>Women Kurtas sets & salwar suits</button>
+      <button mat-menu-item>Women Ethnic Dress</button>
+      <button mat-menu-item>Women Gowns</button>
+    </mat-menu>
+
+    <mat-menu #mensfootwear="matMenu">
+      <p class="subTitle">Men's Foot Wear</p>
+      <button mat-menu-item>All</button>
+      <button mat-menu-item>Men's Sports Shoes</button>
+      <button mat-menu-item>Men's Casual Shoes</button>
+      <button mat-menu-item>Men's Sandals & Floaters</button>
+    </mat-menu>
+  </div>
+  <div class="catDiv">
+    <img
+      src="https://rukminim2.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100"
+      width="50"
+    />
+    <a [matMenuTriggerFor]="electronics">
+      Electronics <mat-icon>keyboard_arrow_down</mat-icon></a
+    >
+    <mat-menu #electronics="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="audio">Audio</button>
+      <button mat-menu-item>Electronics GST Store</button>
+      <button mat-menu-item [matMenuTriggerFor]="camera">
+        Camera & Accessories
+      </button>
+      <button mat-menu-item [matMenuTriggerFor]="computer">
+        Computer Peripherals
+      </button>
+    </mat-menu>
+
+    <mat-menu #audio="matMenu">
+      <p class="subTitle">More in audio</p>
+      <button mat-menu-item>All</button>
+      <button mat-menu-item>Bluetooth headphones</button>
+      <button mat-menu-item>Wired Headphones</button>
+      <button mat-menu-item>True Wireless Earbuds</button>
+      <button mat-menu-item>Bluetooth Speakers</button>
+    </mat-menu>
+
+    <mat-menu #camera="matMenu">
+      <p class="subTitle">More in camera & accessories</p>
+      <button mat-menu-item>All</button>
+      <button mat-menu-item>DSLR & mirrorless</button>
+      <button mat-menu-item>Sports & Action</button>
+      <button mat-menu-item>Point & Shoot</button>
+      <button mat-menu-item>Instant Cameras</button>
+      <button mat-menu-item>Camera tripods</button>
+      <button mat-menu-item>Camera Lenses</button>
+    </mat-menu>
+
+    <mat-menu #computer="matMenu">
+      <p class="subTitle">More in Computers</p>
+      <button mat-menu-item>Printers</button>
+      <button mat-menu-item>Monitors</button>
+      <button mat-menu-item>Projectors</button>
+      <button mat-menu-item>Portable Projectors</button>
+      <button mat-menu-item>Ink bottles</button>
+    </mat-menu>
+  </div>
+  <div class="catDiv">
+    <img
+      src="https://rukminim2.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100"
+      width="50"
+    />
+    <a [matMenuTriggerFor]="home">
+      Home & Furnitures <mat-icon>keyboard_arrow_down</mat-icon></a
+    >
+    <mat-menu #home="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="furnishing">
+        Home Furnishings
+      </button>
+      <button mat-menu-item [matMenuTriggerFor]="living">
+        Living room furnitures
+      </button>
+      <button mat-menu-item [matMenuTriggerFor]="kitchen">
+        Kitchen & Dining
+      </button>
+      <button mat-menu-item [matMenuTriggerFor]="bedroom">
+        Bedroom Furniture
+      </button>
+    </mat-menu>
+
+    <mat-menu #furnishing="matMenu">
+      <p class="subTitle">More in home furnishing</p>
+      <button mat-menu-item>All</button>
+      <button mat-menu-item>Beds linens</button>
+      <button mat-menu-item>Bedsheets</button>
+      <button mat-menu-item>Blankets</button>
+      <button mat-menu-item>Bath linens</button>
+    </mat-menu>
+
+    <mat-menu #living="matMenu">
+      <p class="subTitle">More in lving room furniture</p>
+      <button mat-menu-item>All</button>
+      <button mat-menu-item>Tv units</button>
+      <button mat-menu-item>Dining sets</button>
+      <button mat-menu-item>Sofa beds</button>
+      <button mat-menu-item>Recliners</button>
+    </mat-menu>
+
+    <mat-menu #kitchen="matMenu">
+      <p class="subTitle">More in kitchen & dinings</p>
+      <button mat-menu-item>Cook wear</button>
+      <button mat-menu-item>Kninf, Choppers, Cutters</button>
+      <button mat-menu-item>Kitchen Tools</button>
+      <button mat-menu-item>Bar ware</button>
+    </mat-menu>
+
+    <mat-menu #bedroom="matMenu">
+      <p class="subTitle">More in Bedroom furniture</p>
+      <button mat-menu-item>All</button>
+      <button mat-menu-item>Beds</button>
+      <button mat-menu-item>Mattresses</button>
+      <button mat-menu-item>Wardrobs</button>
+      <button mat-menu-item>Office Tables</button>
+    </mat-menu>
+  </div>
+  <div class="catDiv">
+    <img
+      src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100"
+      width="50"
+    />
+    <a>Appliances</a>
+  </div>
+  <div class="catDiv">
+    <img
+      src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100"
+      width="50"
+    />
+    <a>Grocery</a>
+  </div>
+  <div class="catDiv">
+    <img
+      src="https://rukminim2.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100"
+      width="50"
+    />
+    <a [matMenuTriggerFor]="beauty">
+      Beauty & Toys <mat-icon>keyboard_arrow_down</mat-icon>
+    </a>
+    <mat-menu #beauty="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="personal">
+        Beauty & Personal care
+      </button>
+      <button mat-menu-item [matMenuTriggerFor]="grooming">
+        Men's Grooming
+      </button>
+      <button mat-menu-item [matMenuTriggerFor]="food">Food & Drink</button>
+      <button mat-menu-item [matMenuTriggerFor]="nutrition">
+        Nutrition & Healthcare
+      </button>
+    </mat-menu>
+
+    <mat-menu #personal="matMenu">
+      <p class="subTitle">More in Beauty & Personal care</p>
+      <button mat-menu-item>View All</button>
+      <button mat-menu-item>Bath & oral care</button>
+      <button mat-menu-item>Personal higenic</button>
+      <button mat-menu-item>Eye makeup</button>
+      <button mat-menu-item>Face makeup</button>
+    </mat-menu>
+
+    <mat-menu #grooming="matMenu">
+      <p class="subTitle">More in Men's Grooming</p>
+      <button mat-menu-item>View All</button>
+      <button mat-menu-item>Face washes</button>
+      <button mat-menu-item>Beard oils</button>
+      <button mat-menu-item>Hair styling</button>
+      <button mat-menu-item>Shaving essestial</button>
+    </mat-menu>
+
+    <mat-menu #food="matMenu">
+      <p class="subTitle">More in Food & Drink</p>
+      <button mat-menu-item>View All</button>
+      <button mat-menu-item>Nuts & Dry fruits</button>
+      <button mat-menu-item>Cooking essenstials</button>
+      <button mat-menu-item>Breakfast Items</button>
+      <button mat-menu-item>Sancks corner</button>
+    </mat-menu>
+
+    <mat-menu #nutrition="matMenu">
+      <p class="subTitle">More in nutrition & helath care</p>
+      <button mat-menu-item>View All</button>
+      <button mat-menu-item>Masks</button>
+      <button mat-menu-item>Ayurvedic Suppliments</button>
+      <button mat-menu-item>Vitamin Suppliments</button>
+    </mat-menu>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<mat-toolbar class="toolbarDiv">
+  <div class="formDiv">
+    <img
+      src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+      alt="logo"
+      srcset=""
+    />
+    <form class="example-form" [formGroup]="searchForm">
+      <!-- <mat-form-field class="example-full-width" appearance="outline">
+        <input
+          type="email"
+          matInput
+          formControlName="searchInput"
+          (input)="inputVal($event)"
+          placeholder="Search products, brands and more"
+        />
+      </mat-form-field> -->
+      <mat-form-field appearance="outline">
+        <input
+          type="text"
+          matInput
+          placeholder="Search..."
+          formControlName="searchInput"
+          [matAutocomplete]="auto"
+          (input)="inputVal($event)"
+        />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let item of filteredItems" [value]="item">
+            {{ item }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+  </div>
+  <div class="rightSide">
+    <img src="assets/images/dark_mode.svg" alt="" srcset="" />
+    <span class="cartIconDiv"
+      ><mat-icon>add_shopping_cart</mat-icon> <span>Cart</span></span
+    >
+  </div>
+</mat-toolbar>
